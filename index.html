@@ -9,19 +9,45 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="shortcut icon" href="img\favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css\landing.css" />
     <title>راف کات</title>
   </head>
   <body dir="rtl">
     <header class="header">
       <div class="header__logo">
-        <a href="/">
-          <img src="img\Layer_1.png" alt="Logo" />
+        <a href="/" class="header__logo--link">
+          <img src="img\Layer_1.png" alt="Logo" class="header__logo--logo" />
         </a>
       </div>
-      <nav class="header__nav"></nav>
+      <nav class="header__nav">
+        <ul class="header__nav__items">
+          <li class="header__nav__items--item">
+            <a href="" class="header__nav__items--item--link">خدمات</a>
+          </li>
+          <li class="header__nav__items--item">
+            <a href="" class="header__nav__items--item--link">نمونه کار</a>
+          </li>
+          <li class="header__nav__items--item">
+            <a href="" class="header__nav__items--item--link">درباره ما</a>
+          </li>
+          <li class="header__nav__items--item">
+            <a href="" class="header__nav__items--item--link">بلاگ</a>
+          </li>
+          <li class="header__nav__items--item">
+            <a href="" class="header__nav__items--item--link">امورمشتریان</a>
+          </li>
+        </ul>
+      </nav>
       <div class="header__user">
-        <a href="" class="signup-btn btn--small btn--purple"></a>
-        <div class="buying-ico"></div>
+        <a href="" class="header__user__shpping">
+          <i
+            class="fa fa-shopping-bag header__user__shpping--ico"
+            aria-hidden="true"
+          ></i>
+        </a>
+        <a href="" class="header__user__signup-btn btn--small btn--purple"
+          >ورود کاربر</a
+        >
       </div>
     </header>
   </body>

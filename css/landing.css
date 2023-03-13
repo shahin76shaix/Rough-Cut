@@ -326,7 +326,92 @@ html {
 }
 
 body {
+  background-color: #e4dbee;
   box-sizing: border-box;
+}
+
+.header {
+  background-color: rgba(242, 242, 242, 0.9490196078);
+  display: flex;
+  position: fixed;
+  box-shadow: 0 0.7rem 1.7rem rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 10vh;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+.header__logo {
+  width: 20rem;
+}
+.header__logo--link {
+  cursor: pointer;
+}
+.header__logo--logo {
+  width: 100%;
+}
+.header__nav__items {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  flex-direction: row;
+}
+.header__nav__items--item {
+  font-family: "Yekan";
+}
+.header__nav__items--item--link {
+  text-decoration: none;
+  display: inline-block;
+  color: #a07fc4;
+  font-size: 1.8rem;
+  transition: all 0.2s ease-out;
+  padding: 1rem 2rem;
+  border-radius: 0.2rem;
+  border-bottom: 1px solid rgba(242, 242, 242, 0.9490196078);
+}
+.header__nav__items--item--link:hover {
+  transform: scale(1.25);
+}
+.header__nav__items--item--link:active {
+  border-bottom: 1px solid #a07fc4;
+}
+
+.header__user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 12rem;
+}
+
+.header__user__shpping--ico {
+  display: inline-block;
+  font-size: 2.5rem;
+  color: #a07fc4;
+  transition: all 0.3s ease-out;
+}
+.header__user__shpping--ico:hover {
+  color: #796094;
+}
+.header__user__shpping--ico:active {
+  color: rgba(84, 44, 128, 0.7333333333);
+}
+
+.header__user__signup-btn {
+  text-decoration: none;
+  font-family: "Yekan";
+  display: inline-block;
+  font-size: 1.6rem;
+  background-color: #a07fc4;
+  border-radius: 1.8rem;
+  padding: 0.8rem 1.2rem;
+  color: rgba(242, 242, 242, 0.9490196078);
+  transition: all 0.3s ease-out;
+}
+.header__user__signup-btn:hover {
+  background-color: #796094;
+}
+.header__user__signup-btn:active {
+  background-color: rgba(84, 44, 128, 0.7333333333);
 }
 
 /*# sourceMappingURL=landing.css.map */
