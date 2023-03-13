@@ -330,6 +330,28 @@ body {
   box-sizing: border-box;
 }
 
+.nav-link {
+  font-family: "Yekan";
+  color: #a07fc4;
+  font-size: 1.8rem;
+}
+
+.ham--icon {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  border: none;
+  cursor: pointer;
+}
+.ham--icon span {
+  display: inline-block;
+  width: 100%;
+  height: 0.2rem;
+  background-color: #a07fc4;
+}
+
 .header {
   background-color: rgba(242, 242, 242, 0.9490196078);
   display: flex;
@@ -356,14 +378,9 @@ body {
   list-style: none;
   flex-direction: row;
 }
-.header__nav__items--item {
-  font-family: "Yekan";
-}
 .header__nav__items--item--link {
   text-decoration: none;
   display: inline-block;
-  color: #a07fc4;
-  font-size: 1.8rem;
   transition: all 0.2s ease-out;
   padding: 1rem 2rem;
   border-radius: 0.2rem;
@@ -375,14 +392,12 @@ body {
 .header__nav__items--item--link:active {
   border-bottom: 1px solid #a07fc4;
 }
-
 .header__user {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 12rem;
 }
-
 .header__user__shpping--ico {
   display: inline-block;
   font-size: 2.5rem;
@@ -395,7 +410,6 @@ body {
 .header__user__shpping--ico:active {
   color: rgba(84, 44, 128, 0.7333333333);
 }
-
 .header__user__signup-btn {
   text-decoration: none;
   font-family: "Yekan";
@@ -412,6 +426,39 @@ body {
 }
 .header__user__signup-btn:active {
   background-color: rgba(84, 44, 128, 0.7333333333);
+}
+
+@media (max-width: 48rem) {
+  .header {
+    z-index: 1;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__logo {
+    width: 11rem;
+    text-align: center;
+  }
+  .header__logo--link {
+    cursor: pointer;
+  }
+  .header__logo--logo {
+    width: 100%;
+  }
+  .header__user {
+    width: 8rem;
+  }
+  .header__user__shpping--ico {
+    display: inline-block;
+    font-size: 1.8rem;
+  }
+  .header__user__signup-btn {
+    text-decoration: none;
+    font-family: "Yekan";
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.4rem 0.9rem;
+  }
 }
 
 /*# sourceMappingURL=landing.css.map */
