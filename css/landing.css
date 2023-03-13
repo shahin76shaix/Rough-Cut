@@ -336,6 +336,13 @@ body {
   font-size: 1.8rem;
 }
 
+.aside-link {
+  font-family: "Yekan";
+  color: #a07fc4;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
 .ham--icon {
   width: 3rem;
   height: 3rem;
@@ -363,6 +370,9 @@ body {
   align-items: center;
   overflow: hidden;
 }
+.header__ham-icon {
+  display: none;
+}
 .header__logo {
   width: 20rem;
 }
@@ -375,6 +385,8 @@ body {
 .header__nav__items {
   display: flex;
   justify-content: space-around;
+  margin: 0;
+  padding: 0;
   list-style: none;
   flex-direction: row;
 }
@@ -420,6 +432,7 @@ body {
   padding: 0.8rem 1.2rem;
   color: rgba(242, 242, 242, 0.9490196078);
   transition: all 0.3s ease-out;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.4);
 }
 .header__user__signup-btn:hover {
   background-color: #796094;
@@ -432,12 +445,14 @@ body {
   .header {
     z-index: 1;
   }
+  .header__ham-icon {
+    display: block;
+  }
   .header__nav {
     display: none;
   }
   .header__logo {
     width: 11rem;
-    text-align: center;
   }
   .header__logo--link {
     cursor: pointer;
@@ -459,6 +474,53 @@ body {
     font-size: 1rem;
     padding: 0.4rem 0.9rem;
   }
+}
+.aside {
+  z-index: 3;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(30, 30, 30, 0.9);
+  width: 40vw;
+}
+.aside__close {
+  position: absolute;
+  top: 10%;
+  right: 82%;
+  color: #a07fc4;
+  border: none;
+  background-color: rgba(30, 30, 30, 0);
+  cursor: pointer;
+}
+.aside__close i {
+  font-size: 2.2rem;
+}
+.aside__items {
+  margin: 0;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
+}
+.aside__items__item {
+  border: 1px solid #a07fc4;
+  border-right: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.aside__items--link {
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.fa-angle-left {
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=landing.css.map */

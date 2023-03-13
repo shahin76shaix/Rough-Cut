@@ -3,3 +3,10 @@
   color: $color-second-primary;
   font-size: $font-size-small;
 }
+
+.aside-link {
+  font-family: $font-b-yekan;
+  color: $color-second-primary;
+  font-size: $font-size-small - 0.2;
+  text-decoration: none;
+}

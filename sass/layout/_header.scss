@@ -8,6 +8,9 @@
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
+  &__ham-icon {
+    display: none;
+  }
   &__logo {
     width: 20rem;
     &--link {
@@ -21,6 +24,8 @@
     &__items {
       display: flex;
       justify-content: space-around;
+      margin: 0;
+      padding: 0;
       //   width: 40rem;
       list-style: none;
       flex-direction: row;
@@ -71,6 +76,7 @@
       padding: 0.8rem 1.2rem;
       color: $color-light-grey;
       transition: all 0.3s ease-out;
+      box-shadow: 0 0.3rem 1rem rgba($color-black-main, 0.4);
       &:hover {
         background-color: #796094;
       }
@@ -84,12 +90,14 @@
 @media (max-width: 48rem) {
   .header {
     z-index: 1;
+    &__ham-icon {
+      display: block;
+    }
     &__nav {
       display: none;
     }
     &__logo {
       width: 11rem;
-      text-align: center;
       &--link {
         cursor: pointer;
       }
