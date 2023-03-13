@@ -475,6 +475,17 @@ body {
     padding: 0.4rem 0.9rem;
   }
 }
+.aside-background {
+  z-index: 2;
+  position: fixed;
+  width: 60vw;
+  height: 100vh;
+  background-color: rgba(173, 74, 79, 0.5);
+  left: 0;
+  margin-left: -250rem;
+  transition: margin 0.6s;
+}
+
 .aside {
   z-index: 3;
   position: fixed;
@@ -484,10 +495,12 @@ body {
   height: 100vh;
   background-color: rgba(30, 30, 30, 0.9);
   width: 40vw;
+  transition: margin 0.6s;
+  margin-right: -250rem;
 }
 .aside__close {
   position: absolute;
-  top: 10%;
+  top: 7%;
   right: 82%;
   color: #a07fc4;
   border: none;
@@ -499,8 +512,9 @@ body {
 }
 .aside__items {
   margin: 0;
+  margin-top: -11rem;
   width: 100%;
-  height: 60%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
