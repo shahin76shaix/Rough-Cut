@@ -338,7 +338,7 @@ body {
 
 .aside-link {
   font-family: "Yekan";
-  color: #a07fc4;
+  color: #c69ff0;
   font-size: 1.6rem;
   text-decoration: none;
 }
@@ -502,7 +502,7 @@ body {
   position: absolute;
   top: 7%;
   right: 82%;
-  color: #a07fc4;
+  color: #c69ff0;
   border: none;
   background-color: rgba(30, 30, 30, 0);
   cursor: pointer;
