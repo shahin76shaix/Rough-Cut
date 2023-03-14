@@ -2,7 +2,7 @@
   z-index: 2;
   position: fixed;
   top: 0;
-  width: 60vw;
+  width: 55vw;
   height: 100vh;
   background-image: linear-gradient(350deg, rgba(red, 0.7), rgba(#91393e, 0.8));
   left: 0;
@@ -18,7 +18,7 @@
   align-items: center;
   height: 100vh;
   background-color: rgba($color-black, 0.95);
-  width: 40vw;
+  width: 45vw;
   transition: margin 0.6s;
   margin-right: -250rem;
   &__close {
@@ -44,7 +44,11 @@
     list-style: none;
     &__item {
       border: 1px solid $color-second-primary;
+      border-top-left-radius: 3rem;
+      border-bottom-left-radius: 3rem;
+      width: 39vw;
       border-right: none;
+      box-shadow: 0 0.2rem 6rem rgba($color-second-primary, 0.6);
       padding-top: 1rem;
       padding-bottom: 1rem;
     }
