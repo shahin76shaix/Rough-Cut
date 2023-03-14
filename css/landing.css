@@ -326,7 +326,7 @@ html {
 }
 
 body {
-  background-color: #e4dbee;
+  background-color: rgba(30, 30, 30, 0.1176470588);
   box-sizing: border-box;
 }
 
@@ -350,6 +350,22 @@ body {
   text-decoration: none;
 }
 
+.grid-title {
+  font-family: "Yekan";
+  font-size: 3.8rem;
+  text-shadow: 1px 7px 1.2rem rgba(30, 30, 30, 0.4);
+}
+.grid-title--purple {
+  color: #a07fc4;
+}
+
+.grid-text {
+  font-family: "Yekan";
+  font-size: 1.7rem;
+  color: #414141;
+  line-height: 2.5rem;
+}
+
 .footer-list-title {
   font-size: 1.8rem;
   font-family: "Yekan";
@@ -359,6 +375,10 @@ body {
   font-size: 1.5rem;
   font-family: "Yekan";
   text-decoration: none;
+}
+
+.u-margin-top {
+  margin-top: 1rem;
 }
 
 .ham--icon {
@@ -379,7 +399,7 @@ body {
 }
 
 .to-the-top--btn {
-  z-index: 1;
+  z-index: 0;
   text-decoration: none;
   text-align: center;
   color: #646464;
@@ -402,6 +422,7 @@ body {
 }
 .to-the-top--btn:active {
   transform: translateY(0.1rem);
+  box-shadow: 0 0.4rem 0.5rem rgba(30, 30, 30, 0.5);
 }
 .to-the-top--btn i {
   text-align: center;
@@ -409,13 +430,14 @@ body {
 }
 
 .dark-mod--btn {
+  z-index: 0;
   text-decoration: none;
   text-align: center;
   color: #646464;
   border: 0.5rem solid #ad4a4f;
-  outline: 0.3rem solid #444343;
+  outline: 0.2rem solid #444343;
   position: absolute;
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   background-color: rgba(242, 242, 242, 0.9490196078);
   margin-top: -2rem;
   top: 0;
@@ -590,11 +612,11 @@ body {
   }
 }
 .footer {
-  z-index: 1;
+  z-index: 0;
   display: flex;
   flex-direction: row;
   width: 100%;
-  position: absolute;
+  position: relative;
   bottom: 0%;
   right: 0%;
   background-image: linear-gradient(190deg, #ad4a4f 55%, #d86c72);
@@ -717,7 +739,7 @@ body {
   z-index: 2;
   position: fixed;
   top: 0;
-  width: 55vw;
+  width: 99vw;
   height: 100vh;
   background-image: linear-gradient(350deg, rgba(255, 0, 0, 0.7), rgba(145, 57, 62, 0.8));
   left: 0;
@@ -779,6 +801,21 @@ body {
   margin-right: 1rem;
   margin-left: 0.5rem;
   text-align: center;
+}
+
+.main-grid-1 {
+  margin-top: 10rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.main-grid-1__layaout-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
 }
 
 /*# sourceMappingURL=landing.css.map */

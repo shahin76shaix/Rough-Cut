@@ -11,6 +11,21 @@
   text-decoration: none;
 }
 
+.grid-title {
+  font-family: $font-b-yekan;
+  font-size: $font-size-big - 0.2rem;
+  text-shadow: 1px 7px 1.2rem rgba($color-black, 0.4);
+  &--purple {
+    color: $color-second-primary;
+  }
+}
+.grid-text {
+  font-family: $font-b-yekan;
+  font-size: $font-size-medium - 0.8rem;
+  color: #414141;
+  line-height: 2.5rem;
+}
+
 .footer-list-title {
   font-size: $font-size-small;
   font-family: $font-b-yekan;

@@ -1,0 +1,17 @@
+@mixin main-margin {
+  margin-top: 10rem;
+}
+
+@mixin grid-flex-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin grid-flex-row-reverse {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-around;
+  align-items: center;
+}
