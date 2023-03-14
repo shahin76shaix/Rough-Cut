@@ -107,4 +107,11 @@
       color: #dedede;
     }
   }
+
+  &--purple {
+    color: $color-second-primary;
+    &:active {
+      color: #785a99;
+    }
+  }
 }

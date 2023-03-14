@@ -15,6 +15,7 @@
   display: flex;
   justify-content: space-around;
   width: 60%;
+  margin-top: 1.5rem;
 }
 .list__items {
   margin: 0;
@@ -79,7 +80,8 @@
 }
 
 .footer__wrapper--slogan {
-  margin-top: 3rem;
+  margin: 0;
+  margin-top: 1.5rem;
   color: $color-light-grey;
   text-align: center;
   font-size: $font-size-small - 0.5rem;
@@ -127,6 +129,5 @@
   }
   .footer__wrapper--slogan {
     font-size: $font-size-small - 0.7rem;
-    margin-bottom: 3rem;
   }
 } ;

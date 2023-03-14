@@ -14,9 +14,12 @@
 .grid-title {
   font-family: $font-b-yekan;
   font-size: $font-size-big - 0.2rem;
-  text-shadow: 1px 7px 1.2rem rgba($color-black, 0.4);
+  text-shadow: 1px 7px 1.2rem rgba($color-black, 0.3);
   &--purple {
     color: $color-second-primary;
+  }
+  &--red {
+    color: $color-primary;
   }
 }
 .grid-text {
@@ -24,6 +27,15 @@
   font-size: $font-size-medium - 0.8rem;
   color: #414141;
   line-height: 2.5rem;
+}
+
+@media (max-width: 48rem) {
+  .grid-title {
+    font-size: $font-size-big - 1rem;
+  }
+  .grid-text {
+    font-size: $font-size-medium - 1rem;
+  }
 }
 
 .footer-list-title {
