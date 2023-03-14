@@ -468,6 +468,7 @@ body {
 
 .header {
   background-color: rgba(242, 242, 242, 0.9490196078);
+  background-image: linear-gradient(70deg, rgba(242, 242, 242, 0.9490196078), #e6d0ff);
   display: flex;
   position: fixed;
   box-shadow: 0 0.7rem 1.7rem rgba(0, 0, 0, 0.2);
@@ -503,15 +504,15 @@ body {
   transition: all 0.2s ease-out;
   padding: 1rem 2rem;
   border-radius: 0.2rem;
-  border-bottom: 1px solid rgba(242, 242, 242, 0.9490196078);
 }
 .header__nav__items--item--link:hover {
-  transform: scale(1.25) translateY(-0.3rem);
+  border-bottom: 1px solid rgba(139, 84, 197, 0.768627451);
+  transform: scale(1.1) translateY(-0.3rem);
   color: #8b54c5;
 }
 .header__nav__items--item--link:active {
   border-bottom: 1px solid #a07fc4;
-  transform: scale(1.25) translateY(0.2rem);
+  transform: scale(1.1) translateY(0.2rem);
 }
 .header__user {
   display: flex;
@@ -537,6 +538,7 @@ body {
   display: inline-block;
   font-size: 1.6rem;
   background-color: #a07fc4;
+  border: 1px solid rgba(160, 127, 196, 0);
   border-radius: 1.8rem;
   padding: 0.8rem 1.2rem;
   color: rgba(242, 242, 242, 0.9490196078);
@@ -545,6 +547,7 @@ body {
 }
 .header__user__signup-btn:hover {
   background-color: #796094;
+  border: 1px solid #dab9fd;
 }
 .header__user__signup-btn:active {
   background-color: rgba(84, 44, 128, 0.7333333333);
@@ -592,7 +595,7 @@ body {
   position: absolute;
   bottom: 0%;
   right: 0%;
-  background-color: #ad4a4f;
+  background-image: linear-gradient(190deg, #ad4a4f 55%, #d86c72);
   justify-content: space-around;
   align-items: center;
   height: 45vh;
@@ -623,12 +626,14 @@ body {
   display: inline-block;
   color: rgba(242, 242, 242, 0.9490196078);
   padding-bottom: 0.4rem;
-  border-bottom: 1px solid rgba(241, 241, 241, 0.2);
-  transition: all 0.3s;
+  border-bottom: 1px solid rgba(241, 241, 241, 0);
+  transition: all 0.2s;
 }
 .list__items__item__text:hover, .list__items__item__text:active {
   color: #d8d8d8;
   border-bottom: none;
+  border-bottom: 1px solid #d8d8d8;
+  transform: scale(1.09);
 }
 
 .footer__wrapper {
