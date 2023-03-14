@@ -326,7 +326,7 @@ html {
 }
 
 body {
-  background-color: rgba(30, 30, 30, 0.1176470588);
+  background-color: #cebacd;
   box-sizing: border-box;
 }
 
@@ -339,7 +339,7 @@ body {
 
 .nav-link {
   font-family: "Yekan";
-  color: #8d69b3;
+  color: #a07fc4;
   font-size: 1.8rem;
 }
 
@@ -356,7 +356,7 @@ body {
   text-shadow: 1px 7px 1.2rem rgba(30, 30, 30, 0.3);
 }
 .grid-title--purple {
-  color: #8d69b3;
+  color: #a07fc4;
 }
 .grid-title--red {
   color: #ad4a4f;
@@ -406,7 +406,7 @@ body {
   display: inline-block;
   width: 100%;
   height: 0.2rem;
-  background-color: #8d69b3;
+  background-color: #a07fc4;
 }
 
 .to-the-top--btn {
@@ -501,7 +501,7 @@ body {
   color: #dedede;
 }
 .social-btn--purple {
-  color: #8d69b3;
+  color: #a07fc4;
 }
 .social-btn--purple:active {
   color: #785a99;
@@ -553,7 +553,7 @@ body {
   color: #8b54c5;
 }
 .header__nav__items--item--link:active {
-  border-bottom: 1px solid #8d69b3;
+  border-bottom: 1px solid #a07fc4;
   transform: scale(1.1) translateY(0.2rem);
 }
 .header__user {
@@ -565,7 +565,7 @@ body {
 .header__user__shpping--ico {
   display: inline-block;
   font-size: 2.5rem;
-  color: #8d69b3;
+  color: #a07fc4;
   transition: all 0.3s ease-out;
 }
 .header__user__shpping--ico:hover {
@@ -579,7 +579,7 @@ body {
   font-family: "Yekan";
   display: inline-block;
   font-size: 1.6rem;
-  background-color: #8d69b3;
+  background-color: #a07fc4;
   border: 1px solid rgba(160, 127, 196, 0);
   border-radius: 1.8rem;
   padding: 0.8rem 1.2rem;
@@ -802,12 +802,12 @@ body {
   list-style: none;
 }
 .aside__items__item {
-  border: 1px solid #8d69b3;
+  border: 1px solid #a07fc4;
   border-top-left-radius: 3rem;
   border-bottom-left-radius: 3rem;
   width: 39vw;
   border-right: none;
-  box-shadow: 0rem 0rem 2rem 1rem rgba(141, 105, 179, 0.3);
+  box-shadow: 0rem 0rem 2rem 1rem rgba(160, 127, 196, 0.3);
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
