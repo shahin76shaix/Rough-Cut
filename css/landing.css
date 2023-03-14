@@ -330,6 +330,13 @@ body {
   box-sizing: border-box;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .nav-link {
   font-family: "Yekan";
   color: #a07fc4;
@@ -340,6 +347,17 @@ body {
   font-family: "Yekan";
   color: #c69ff0;
   font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.footer-list-title {
+  font-size: 1.8rem;
+  font-family: "Yekan";
+}
+
+.footer-list-link {
+  font-size: 1.5rem;
+  font-family: "Yekan";
   text-decoration: none;
 }
 
@@ -365,7 +383,7 @@ body {
   position: fixed;
   box-shadow: 0 0.7rem 1.7rem rgba(0, 0, 0, 0.2);
   width: 100%;
-  height: 10vh;
+  height: 12vh;
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
@@ -400,6 +418,7 @@ body {
 }
 .header__nav__items--item--link:hover {
   transform: scale(1.25);
+  color: #8b54c5;
 }
 .header__nav__items--item--link:active {
   border-bottom: 1px solid #a07fc4;
@@ -471,8 +490,74 @@ body {
     text-decoration: none;
     font-family: "Yekan";
     display: inline-block;
-    font-size: 1rem;
-    padding: 0.4rem 0.9rem;
+    font-size: 1.1rem;
+    padding: 0.5rem 0.9rem;
+  }
+}
+.footer {
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  background-color: #ad4a4f;
+  justify-content: space-around;
+  align-items: center;
+  height: 40vh;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.list__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list__items__item {
+  color: #f1f1f1;
+}
+
+.list__items__item__title {
+  margin-bottom: 1.2rem;
+}
+
+.list__items__item__text {
+  margin-bottom: 1rem;
+  display: inline-block;
+  color: #f1f1f1;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid rgba(241, 241, 241, 0.4509803922);
+}
+
+@media (max-width: 48rem) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer__list {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .list__items {
+    display: flex;
+    flex-direction: row;
+  }
+  .list__items__item__title {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .list__items__item__title::after {
+    content: " :";
+  }
+  .list__items__item__text {
+    margin-left: 1.2rem;
   }
 }
 .aside-background {
