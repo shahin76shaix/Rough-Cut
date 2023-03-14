@@ -28,11 +28,11 @@
   margin-bottom: 1.2rem;
 }
 .list__items__item__text {
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
   display: inline-block;
   color: $color-light-grey;
   padding-bottom: 0.4rem;
-  border-bottom: 1px solid #f1f1f173;
+  border-bottom: 1px solid #f1f1f133;
   transition: all 0.3s;
   &:hover,
   &:active {
@@ -53,6 +53,7 @@
   height: 70%;
   padding: 2rem 4rem;
   background-color: rgba($color-black, 0.7);
+  box-shadow: 0 0.8rem 1rem rgba($color-black, 0.5);
 }
 
 .footer__wrapper__social--paragraph {

@@ -377,6 +377,78 @@ body {
   background-color: #a07fc4;
 }
 
+.to-the-top--btn {
+  z-index: 1;
+  text-decoration: none;
+  text-align: center;
+  color: #646464;
+  border: 0.5rem solid #ad4a4f;
+  outline: 0.2rem solid #444343;
+  position: absolute;
+  font-size: 2.6rem;
+  background-color: rgba(242, 242, 242, 0.9490196078);
+  margin-top: -2rem;
+  top: 0;
+  padding: 0.1rem 0.3rem;
+  border-radius: 5rem;
+  display: inline-block;
+  box-shadow: 0 0.4rem 2rem rgba(30, 30, 30, 0.5);
+  transition: all 0.2s ease-out;
+}
+.to-the-top--btn:hover {
+  transform: translateY(-0.5rem);
+}
+.to-the-top--btn:active {
+  transform: translateY(0.1rem);
+}
+.to-the-top--btn i {
+  text-align: center;
+  display: block;
+}
+
+.dark-mod--btn {
+  text-decoration: none;
+  text-align: center;
+  color: #646464;
+  border: 0.5rem solid #ad4a4f;
+  outline: 0.2rem solid #444343;
+  position: absolute;
+  font-size: 2.6rem;
+  background-color: rgba(242, 242, 242, 0.9490196078);
+  margin-top: -2rem;
+  top: 0;
+  right: 7%;
+  padding: 0.1rem 0.3rem;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  border-radius: 5rem;
+  display: inline-block;
+  box-shadow: 0 0.4rem 2rem rgba(30, 30, 30, 0.5);
+}
+.dark-mod--btn:hover {
+  transform: translateY(-0.5rem);
+}
+.dark-mod--btn:active {
+  transform: translateY(0.1rem);
+}
+.dark-mod--btn i {
+  text-align: center;
+  display: block;
+}
+
+@media (max-width: 48rem) {
+  .to-the-top--btn {
+    right: 91%;
+    margin-top: -1.2rem;
+    font-size: 1.4rem;
+    padding: 0.1rem 0.3rem;
+  }
+  .dark-mod--btn {
+    right: 80%;
+    margin-top: -1.2rem;
+    font-size: 1.4rem;
+  }
+}
 .social-btn {
   font-size: 3rem;
   transition: all 0.2s ease-out;
@@ -547,11 +619,11 @@ body {
 }
 
 .list__items__item__text {
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
   display: inline-block;
   color: rgba(242, 242, 242, 0.9490196078);
   padding-bottom: 0.4rem;
-  border-bottom: 1px solid rgba(241, 241, 241, 0.4509803922);
+  border-bottom: 1px solid rgba(241, 241, 241, 0.2);
   transition: all 0.3s;
 }
 .list__items__item__text:hover, .list__items__item__text:active {
@@ -571,6 +643,7 @@ body {
   height: 70%;
   padding: 2rem 4rem;
   background-color: rgba(30, 30, 30, 0.7);
+  box-shadow: 0 0.8rem 1rem rgba(30, 30, 30, 0.5);
 }
 
 .footer__wrapper__social--paragraph {
