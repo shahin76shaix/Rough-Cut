@@ -40,11 +40,12 @@
           &:hover {
             // color: $color-light-grey;
             // background-color: $color-second-primary;
-            transform: scale(1.25);
+            transform: scale(1.25) translateY(-0.3rem);
             color: #8b54c5;
           }
           &:active {
             border-bottom: 1px solid $color-second-primary;
+            transform: scale(1.25) translateY(0.2rem);
           }
         }
       }
@@ -107,17 +108,17 @@
       }
     }
     &__user {
-      width: 8rem;
+      width: 10rem;
       &__shpping--ico {
         display: inline-block;
-        font-size: $font-size-medium - 0.7rem;
+        font-size: $font-size-medium - 0.5rem;
       }
       &__signup-btn {
         text-decoration: none;
         font-family: $font-b-yekan;
         display: inline-block;
-        font-size: $font-size-small - 0.7rem;
-        padding: 0.5rem 0.9rem;
+        font-size: $font-size-small - 0.5rem;
+        padding: 0.7rem 0.9rem;
       }
     }
   }

@@ -13,3 +13,20 @@
     background-color: $color-second-primary;
   }
 }
+
+.social-btn {
+  font-size: 3rem;
+  transition: all 0.2s ease-out;
+  &:hover {
+    transform: translateY(-0.7rem);
+  }
+  &:active {
+    transform: translateY(-0.15rem);
+  }
+  &--white {
+    color: $color-light-grey;
+    &:active {
+      color: #dedede;
+    }
+  }
+}
